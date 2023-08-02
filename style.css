@@ -531,10 +531,11 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    bottom: 0;
 }
 footer span a{
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 footer span a:hover{
     text-decoration: underline;
