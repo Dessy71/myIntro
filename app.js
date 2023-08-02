@@ -78,5 +78,5 @@ function handleSubmit(event) {
 
 
 
-const year = document.querySelector('.year');
-year.innerHTML = new Date().getFullYear();
+//const year = document.querySelector('.year');
+//year.innerHTML = new Date().getFullYear();
