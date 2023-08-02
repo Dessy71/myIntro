@@ -166,13 +166,16 @@ section .title::after{
 /* header section styling */
 .header{
     display: flex;
-    background: url("lap.jpeg") no-repeat center;
+    background: url("lap.jpeg") repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+
+    
+
 }
 .header .max-width{
   width: 100%;
@@ -694,7 +697,7 @@ footer span a:hover{
 
 @media only screen and (max-width: 767px) {
     .header {
-        background-size: contain;
+        background-size: cover;
         background-attachment: scroll;
     }
 }
@@ -702,9 +705,9 @@ footer span a:hover{
 /* footer section styling */
 
 .desmond {
-    background: #111;
+    background: #464545;
     padding: 15px 23px;
-    color: rgb(139, 133, 133);
+    color: rgb(226, 105, 105);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
