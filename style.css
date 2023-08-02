@@ -537,20 +537,6 @@ footer span a:hover{
     text-decoration: underline;
     color: skyblue;
 }
-footer .icons{
-    padding-top: 0.8rem;
-    padding-bottom: 0.2rem;
-}
-
-footer .icons a{
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0.2rem;
-    color: #f4f4f4;
-}
-footer .icons a:hover{
-    color: skyblue;
-}
 
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -711,6 +697,77 @@ footer .icons a:hover{
         background-size: contain;
         background-attachment: scroll;
     }
+}
+
+/* footer section styling */
+
+.desmond {
+    background: #111;
+    padding: 15px 23px;
+    color: rgb(139, 133, 133);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.desmond .icons {
+    padding-top: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+
+.desmond .icons a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    color: #f4f4f4;
+    border: none;
+ 
+}
+
+.desmond .icons a:hover {
+   
+    background-image: linear-gradient(to right, #00e2ff, #eb0a37); /* Gradient effect */
+}
+
+/* Add styles to make the icons appear correctly */
+.desmond .icons i {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Set background color to transparent */
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    padding: 6px;
+}
+
+/* Add styles for individual icons */
+.desmond .icons .fa-github {
+    color: white;
+}
+
+.desmond .icons .fa-linkedin-in {
+    color: white;
+}
+
+.desmond .icons .fa-instagram {
+    color: white;
+}
+
+.desmond .icons .fa-twitter {
+    color: white;
+}
+
+.desmond .icons .fa-whatsapp {
+    color: white;
+}
+
+.desmond .icons .fa-envelope {
+    color: white;
+}
+
+.desmond .icons .fa-phone {
+    color: white;
 }
 
 
