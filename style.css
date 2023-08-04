@@ -774,4 +774,71 @@ footer span a:hover{
     color: white;
 }
 
+ /* Confetti particles */
+ .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    animation: fall 7s linear;
+    background-image: url('star.svg'); /* Replace 'star.svg' with the path to your star-shaped SVG */
+    background-size: cover;
+  }
 
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  /* Blue confetti */
+  .confetti-blue {
+    background-color: #0099ff71;
+  }
+
+  /* Violet confetti */
+  .confetti-violet {
+    background-color: #9933ff;
+  }
+
+  /* Gold confetti */
+  .confetti-gold {
+    background-color: #f5d109d2;
+  }
+
+  /* white confetti */
+  .confetti-white {
+    background-color: #ffffff;
+  }
+
+  /* pink confetti */
+  .confetti-pink {
+    background-color: rgba(255, 105, 180, 0.671);
+  }
+
+      /* Media query for small screens */
+      @media screen and (max-width: 767px) {
+    .confetti {
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  /* Media query for medium screens */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .confetti {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  /* Media query for large screens */
+  @media screen and (min-width: 1024px) {
+    .confetti {
+      width: 10px;
+      height: 10px;
+    }
+  }

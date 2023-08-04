@@ -36,16 +36,17 @@ $(document).ready(function(){
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: [" Web Developer", "Frontend Developer"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        typeSpeed: 140,
+        backSpeed: 80,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: [" Web Developer", "Frontend Developer"],
+        strings: [" Web Developer", "Frontend Zealot ", "Graphic Designer"],
         typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
+        backSpeed: 30,
+        loop: true,
+        showCursor: false // Hide the typing cursor
     });
 
     // owl carousel script
@@ -76,7 +77,39 @@ function handleSubmit(event) {
    
 }
 
+ // Function to create confetti particles
+ function createConfetti() {
+    const confettiContainer = document.querySelector('.confetti-container');
 
+    // Create multiple confetti particles (e.g., 50 particles)
+    for (let i = 0; i < 50; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+
+      // Randomly position confetti horizontally and vertically
+      const randomPositionX = Math.random() * 100;
+      const randomPositionY = Math.random() * 100;
+      confetti.style.left = randomPositionX + 'vw';
+      confetti.style.top = randomPositionY + 'vh';
+
+      // Randomly apply colors to the confetti particles
+      const colors = ['confetti-blue', 'confetti-violet', 'confetti-pink', 'confetti-white', 'confetti-gold'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      confetti.classList.add(randomColor);
+
+      confettiContainer.appendChild(confetti);
+
+      // Remove confetti after animation completes
+      confetti.addEventListener('animationend', () => {
+        confetti.remove();
+      });
+    }
+  }
+
+  // Call the createConfetti function every 30 seconds (30000 milliseconds)
+  setInterval(() => {
+    createConfetti();
+  }, 30000);
 
 //const year = document.querySelector('.year');
 //year.innerHTML = new Date().getFullYear();
