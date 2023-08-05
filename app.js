@@ -109,7 +109,7 @@ function handleSubmit(event) {
   // Call the createConfetti function every 30 seconds (30000 milliseconds)
   setInterval(() => {
     createConfetti();
-  }, 25000);
+  }, 30000);
 
   /// JavaScript
 function updateDateTime() {
