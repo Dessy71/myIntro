@@ -780,7 +780,7 @@ footer span a:hover{
     width: 10px;
     height: 10px;
     pointer-events: none;
-    animation: fall 7s linear;
+    animation: fall 8s linear;
     background-image: url('star.svg'); /* Replace 'star.svg' with the path to your star-shaped SVG */
     background-size: cover;
   }
@@ -840,5 +840,43 @@ footer span a:hover{
     .confetti {
       width: 10px;
       height: 10px;
+    }
+  }
+  .custom-btn {
+    background-color: transparent;
+    color: rgba(231, 80, 181, 0.603);
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-color: #87dcf7;
+    border-radius: 20px;
+    font-family: poppins;
+    text-decoration: none;
+  }
+  
+  /* Styles for screens smaller than 576px */
+  @media screen and (max-width: 575px) {
+    .custom-btn {
+      padding: 8px 16px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Styles for screens between 576px and 767px */
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .custom-btn {
+      padding: 10px 18px;
+      border-radius: 18px;
+      font-size: 16px;
+    }
+  }
+  
+  /* Styles for screens between 768px and 991px */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .custom-btn {
+      padding: 12px 22px;
+      border-radius: 22px;
+      font-size: 18px;
     }
   }

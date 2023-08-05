@@ -109,7 +109,25 @@ function handleSubmit(event) {
   // Call the createConfetti function every 30 seconds (30000 milliseconds)
   setInterval(() => {
     createConfetti();
-  }, 30000);
+  }, 25000);
+
+  /// JavaScript
+function updateDateTime() {
+    const currentDate = new Date();
+    const day = currentDate.toLocaleString('en-US', { day: 'numeric' });
+    const month = currentDate.toLocaleString('en-US', { month: 'short' });
+    const time = currentDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
+  
+    const formattedDate = `${currentDate.toLocaleString('en-US', { weekday: 'short' })} ${day} ${month} [${time}]`;
+    document.getElementById('currentDateTime').textContent = formattedDate;
+  }
+  
+  // Call the function to update the date and time every second
+  setInterval(updateDateTime, 1000);
+  
+  // Initial call to set the date and time when the page loads
+  updateDateTime();
+  
 
 //const year = document.querySelector('.year');
 //year.innerHTML = new Date().getFullYear();
