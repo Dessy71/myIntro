@@ -729,7 +729,7 @@ footer span a:hover{
 
 .desmond .icons a:hover {
    
-    background-image: linear-gradient(to right, #00e2ff, #eb0a37); /* Gradient effect */
+    background-image: linear-gradient(to right, #00e1ffa1, #eb0a3754); /* Gradient effect */
 }
 
 /* Add styles to make the icons appear correctly */

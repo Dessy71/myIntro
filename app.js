@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: [" Web Developer", "Frontend Developer"],
+        strings: [" Web Developer", "Frontend Zealot", "Graphic Designer"],
         typeSpeed: 140,
         backSpeed: 80,
         loop: true
@@ -82,7 +82,7 @@ function handleSubmit(event) {
     const confettiContainer = document.querySelector('.confetti-container');
 
     // Create multiple confetti particles (e.g., 50 particles)
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 100; i++) {
       const confetti = document.createElement('div');
       confetti.classList.add('confetti');
 
