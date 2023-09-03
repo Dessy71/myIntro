@@ -880,3 +880,23 @@ footer span a:hover{
       font-size: 18px;
     }
   }
+
+  /* Add a class selector to target the div with class="text-2" */
+.text-2 {
+     /* Center the text horizontally */
+    -webkit-background-clip: text;
+    background-clip: text;
+    overflow: hidden;
+    animation: animate 5s ease-in-out infinite;
+  }
+  
+
+  @keyframes animate {
+    0%, 100% {
+      clip-path: circle(0%); /* 0% radius, effectively hiding the element */
+    }
+    50% {
+      clip-path: circle(84%); /* 50% radius, creating a circular clipping path */
+    }
+  }
+  
