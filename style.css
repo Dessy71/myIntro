@@ -887,7 +887,7 @@ footer span a:hover{
     -webkit-background-clip: text;
     background-clip: text;
     overflow: hidden;
-    animation: animate 5s ease-in-out infinite;
+    animation: animate 15s ease-in-out infinite;
   }
   
 
