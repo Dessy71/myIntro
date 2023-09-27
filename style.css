@@ -476,7 +476,7 @@ section .title::after{
     margin-bottom: 15px;
 }
 .contact .right form .textarea{
-    height: 80px;
+    height: 150px;
     width: 100%;
 }
 .contact .right form .name{
@@ -532,11 +532,11 @@ footer{
     text-align: center;
     bottom: 0;
 }
-footer span a{
+footer p a{
     color: #fff;
     text-decoration: underline;
 }
-footer span a:hover{
+footer p a:hover{
     text-decoration: underline;
     color: skyblue;
 }
