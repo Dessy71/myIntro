@@ -705,34 +705,38 @@ footer p a:hover{
 /* footer section styling */
 
 .desmond {
-    background: #464545;
+  
     padding: 15px 23px;
     color: rgb(226, 105, 105);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.desmond .icons {
+  }
+  
+  .desmond .icons {
     padding-top: 0.8rem;
     padding-bottom: 0.2rem;
-}
-
-.desmond .icons a {
+     display: inline-block;;
+    justify-content: center;
+    background-color: skyblue;
+    animation: changeBackground 3s linear infinite;
+    border-radius: 105px; 
+  }
+  
+  .desmond .icons a {
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0.2rem;
-    color: #f4f4f4;
     border: none;
- 
-}
-
-.desmond .icons a:hover {
-   
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .desmond .icons a:hover {
     background-image: linear-gradient(to right, #00e1ffa1, #eb0a3754); /* Gradient effect */
-}
-
-/* Add styles to make the icons appear correctly */
-.desmond .icons i {
+  }
+  
+  /* Add styles to make the icons appear correctly */
+  .desmond .icons i {
     width: 24px;
     height: 24px;
     display: inline-flex;
@@ -740,38 +744,48 @@ footer p a:hover{
     align-items: center;
     background-color: transparent; /* Set background color to transparent */
     border: none;
-    transition: background-color 0.3s ease-in-out;
     padding: 6px;
-}
-
-/* Add styles for individual icons */
-.desmond .icons .fa-github {
+  }
+  
+  /* Add styles for individual icons */
+  .desmond .icons .fa-github,
+  .desmond .icons .fa-linkedin-in,
+  .desmond .icons .fa-instagram,
+  .desmond .icons .fa-x-twitter,
+  .desmond .icons .fa-whatsapp,
+  .desmond .icons .fa-envelope,
+  .desmond .icons .fa-phone {
     color: white;
-}
-
-.desmond .icons .fa-linkedin-in {
-    color: white;
-}
-
-.desmond .icons .fa-instagram {
-    color: white;
-}
-
-.desmond .icons .fa-twitter {
-    color: white;
-}
-
-.desmond .icons .fa-whatsapp {
-    color: white;
-}
-
-.desmond .icons .fa-envelope {
-    color: white;
-}
-
-.desmond .icons .fa-phone {
-    color: white;
-}
+  }
+  
+  @keyframes changeBackground {
+    0% {
+      box-shadow: 0 0 30px red;
+    }
+    14% {
+      box-shadow: 0 0 30px orange;
+    }
+    28% {
+      box-shadow: 0 0 30px yellow;
+    }
+    42% {
+      box-shadow: 0 0 30px green;
+    }
+    57% {
+      box-shadow: 0 0 30px blue;
+    }
+    71% {
+      box-shadow: 0 0 30px indigo;
+    }
+    85% {
+      box-shadow: 0 0 30px violet;
+    }
+    100% {
+      box-shadow: 0 0 30px red;
+    }
+  }
+  
+  
 
  /* Confetti particles */
  .confetti {
