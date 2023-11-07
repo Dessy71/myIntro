@@ -704,87 +704,79 @@ footer p a:hover{
 
 /* footer section styling */
 
-.desmond {
-  
+.desmond, .kay {
     padding: 15px 23px;
     color: rgb(226, 105, 105);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .desmond .icons {
+}
+
+.desmond .icons, .kay .skills-icons {
     padding-top: 0.8rem;
     padding-bottom: 0.2rem;
-     display: inline-block;;
+    display: inline-block;
     justify-content: center;
     background-color: skyblue;
     animation: changeBackground 3s linear infinite;
-    border-radius: 105px; 
-  }
-  
-  .desmond .icons a {
+    border-radius: 105px;
+}
+
+.desmond .icons a, .kay .skills-icons i {
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0.2rem;
     border: none;
     transition: background-color 0.3s ease-in-out;
     position: relative;
-  }
-  
-  .desmond .icons a:hover {
-    background-image: linear-gradient(to right, #00e1ffa1, #eb0a3754); /* Gradient effect */
-  }
-  
-  /* Add styles to make the icons appear correctly */
-  .desmond .icons i {
+}
+
+.desmond .icons a:hover, .kay .skills-icons i:hover {
+    background-image: linear-gradient(to right, #49970da1, #072b1954);
+}
+
+.desmond .icons i, .kay .skills-icons i {
     width: 24px;
     height: 24px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent; /* Set background color to transparent */
+    background-color: transparent;
     border: none;
     padding: 6px;
-  }
-  
-  /* Add styles for individual icons */
-  .desmond .icons .fa-github,
-  .desmond .icons .fa-linkedin-in,
-  .desmond .icons .fa-instagram,
-  .desmond .icons .fa-x-twitter,
-  .desmond .icons .fa-whatsapp,
-  .desmond .icons .fa-envelope,
-  .desmond .icons .fa-phone {
+}
+
+.desmond .icons .fa-github, .desmond .icons .fa-linkedin-in, .desmond .icons .fa-instagram, .desmond .icons .fa-x-twitter, .desmond .icons .fa-whatsapp, .desmond .icons .fa-envelope, .desmond .icons .fa-phone,
+.kay .skills-icons .fa-html5, .kay .skills-icons .fa-css3-alt, .kay .skills-icons .fa-square-js, .kay .skills-icons .fa-bootstrap {
     color: white;
-  }
-  
-  @keyframes changeBackground {
+}
+
+@keyframes changeBackground {
     0% {
-      box-shadow: 0 0 30px red;
+        box-shadow: 0 0 30px red;
     }
     14% {
-      box-shadow: 0 0 30px orange;
+        box-shadow: 0 0 30px orange;
     }
     28% {
-      box-shadow: 0 0 30px yellow;
+        box-shadow: 0 0 30px yellow;
     }
     42% {
-      box-shadow: 0 0 30px green;
+        box-shadow: 0 0 30px green;
     }
     57% {
-      box-shadow: 0 0 30px blue;
+        box-shadow: 0 0 30px blue;
     }
     71% {
-      box-shadow: 0 0 30px indigo;
+        box-shadow: 0 0 30px indigo;
     }
     85% {
-      box-shadow: 0 0 30px violet;
+        box-shadow: 0 0 30px violet;
     }
     100% {
-      box-shadow: 0 0 30px red;
+        box-shadow: 0 0 30px red;
     }
-  }
-  
+}
+
   
 
  /* Confetti particles */
