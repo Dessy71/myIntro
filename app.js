@@ -144,5 +144,5 @@ function updateDateTime() {
             // Show the main content
             mainContent.style.display = 'block';
         }, 1000); // 1000ms = 1s (duration of the fade out animation)
-    }, 10000); // 10000ms = 10s (time before fading out)
+    }, 5000); // 10000ms = 10s (time before fading out)
 });
