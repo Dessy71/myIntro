@@ -133,7 +133,7 @@ function updateDateTime() {
     // Wait for 10 seconds and then fade out the preloader
     setTimeout(function () {
         var preloader = document.querySelector('.preloader');
-        var mainContent = document.querySelector('.main-content');
+        var mainContent = document. querySelector('.main-content');
 
         // Fade out the preloader
         preloader.style.opacity = 0;
