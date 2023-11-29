@@ -785,7 +785,7 @@ footer p a:hover{
     width: 10px;
     height: 10px;
     pointer-events: none;
-    animation: fall 8s linear;
+    animation: fall 5s linear;
     background-image: url('star.svg'); /* Replace 'star.svg' with the path to your star-shaped SVG */
     background-size: cover;
   }

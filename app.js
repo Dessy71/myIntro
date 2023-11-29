@@ -82,7 +82,7 @@ function handleSubmit(event) {
     const confettiContainer = document.querySelector('.confetti-container');
 
     // Create multiple confetti particles (e.g., 50 particles)
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 30; i++) {
       const confetti = document.createElement('div');
       confetti.classList.add('confetti');
 
@@ -109,7 +109,7 @@ function handleSubmit(event) {
   // Call the createConfetti function every 30 seconds (30000 milliseconds)
   setInterval(() => {
     createConfetti();
-  }, 30000);
+  }, 60000);
 
   /// JavaScript
 function updateDateTime() {
