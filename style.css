@@ -314,7 +314,7 @@ section .title::after{
 .skills .skills-content .column {
     width: 50%;
     display: flex; /* Ensures the column's content is also flex-aligned */
-    flex-direction: column; /* Stacks content vertically within each column */
+    flex-direction: row; /* Stacks content vertically within each column */
     align-items: flex-start; /* Aligns content to the top within each column */
 }
 
