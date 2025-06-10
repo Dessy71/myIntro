@@ -312,9 +312,9 @@ section .title::after{
 }
 
 .skills .skills-content .column {
-    width: 50%;
+    width: 100%;
     display: flex; /* Ensures the column's content is also flex-aligned */
-    flex-direction: row; /* Stacks content vertically within each column */
+    flex-direction: column; /* Stacks content vertically within each column */
     align-items: flex-start; /* Aligns content to the top within each column */
 }
 
@@ -326,7 +326,7 @@ section .title::after{
 }
 
 .skills .skills-content .left p {
-    text-align: justify;
+    text-align: left;
 }
 
 .skills .skills-content .left a {
