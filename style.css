@@ -1,4 +1,4 @@
-/*  import google fonts */
+        /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -300,23 +300,36 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 /* skills section styling */
-
-.skills .title::after{
+.skills .title::after {
     content: " repertoire";
 }
-.skills .skills-content .column{
-    width: calc(50% - 30px);
+
+.skills .skills-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start; /* Ensures content starts at the top of each column */
 }
+
+.skills .skills-content .column {
+    width: 50%;
+    display: flex; /* Ensures the column's content is also flex-aligned */
+    flex-direction: column; /* Stacks content vertically within each column */
+    align-items: flex-start; /* Aligns content to the top within each column */
+}
+
 .skills .skills-content .left .text,
-.skills .skills-content .right .text{
+.skills .skills-content .right .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+
+.skills .skills-content .left p {
     text-align: justify;
 }
-.skills .skills-content .left a{
+
+.skills .skills-content .left a {
     display: inline-block;
     background: skyblue;
     color: #fff;
@@ -328,18 +341,22 @@ section .title::after{
     border: 2px solid skyblue;
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
+
+.skills .skills-content .left a:hover {
     color: skyblue;
     background: none;
 }
-.skills li::marker{
+
+.skills li::marker {
     content: '</>  ';
     color: skyblue;
 }
-.skills li{
+
+.skills li {
     font-size: 20px;
 }
-.skills .skills-content .right .skills-icons{
+
+.skills .skills-content .right .skills-icons {
     display: flex;
     padding: 15px;
     margin: 10px 0px 10px 0px;
